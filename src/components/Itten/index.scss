@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  font-size: 18px;
+  font-family: "Noto", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+h1 {
+  margin: 50px 0 0;
+}
+
+h2 {
+  margin: 40px 0 0;
+}
+
+h3 {
+  margin: 30px 0 0;
+}
+
+
+.color_holder_wrap {
+  width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.bg-impact {
+  .white {
+    background: #fff;
+  }
+
+  .black {
+    background: #000;
+  }
+
+  .gray {
+    background: #808080;
+  }
+
+  .red {
+    background: #FF0000;
+  }
+
+  .green {
+    background: #00FF00;
+  }
+
+  .blue {
+    background: #0000FF;
+  }
+}

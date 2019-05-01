@@ -1,0 +1,31 @@
+.main_bg {
+  width: 160px;
+  height: 160px;
+  margin: 20px auto 0;
+  padding: 0;
+  background: #808080;
+  position: relative;
+  float: left;
+}
+
+.backg {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.ward {
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.forward {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
