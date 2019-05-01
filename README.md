@@ -1,2 +1,2 @@
 # itten
-Digitalization Johannes Itten "The Art of Color"
+Digitalization Johannes Itten's book "The Art of Color".
