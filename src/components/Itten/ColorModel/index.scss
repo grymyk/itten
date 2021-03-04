@@ -2,19 +2,25 @@
   text-align: center;
 
   button {
-    width: 40px;
-    height: 40px;
     border: 1px solid #fff;
+    cursor: pointer;
+    height: 41px;
     margin: 10px 10px 0;
     padding: 0;
-    cursor: pointer;
+    width: 41px;
 
     &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border-color: #000;
       outline: none;
     }
   }
 
   .clicked {
-    border: 1px solid #000;
+    border-color: #000;
+    cursor: default;
   }
 }

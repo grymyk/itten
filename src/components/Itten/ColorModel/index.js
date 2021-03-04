@@ -1,67 +1,36 @@
 import React from 'react'
 
 import './index.scss'
-
-const buttons = [
-    {
-        value: 'red',
-        cls: 'red',
-    }, {
-        value: 'green',
-        cls: 'green',
-    }, {
-        value: 'blue',
-        cls: 'blue',
-    }, {
-        value: 'gray',
-        cls: 'gray',
-    }
-];
-
-function ColorButton(props) {
-    let {value, handleClick, cls} = props.data;
-
-    return (
-        <button
-            value={value}
-            onClick = {handleClick}
-            className={cls}
-        >
-        </button>
-    )
-}
+import ColorButton from "./ColorButton";
+import btnColors from  './btnColors.json';
 
 class ColorModel extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.handleClick = this.handleClick.bind(this)
-    }
-
-    handleClick(event){
+    handleClick = (event) => {
         this.props.onForwardChange(event.target.value)
     }
 
     render() {
-        let {forwardColor} = this.props;
+        const { forwardColor } = this.props;
 
-        const listColorBtn = buttons.map( (elem, index) => {
-            elem.handleClick = this.handleClick;
+        const textToColor = (color, index) => {
+            let cls = color;
 
-            elem.cls = elem.value;
-
-            if (forwardColor === elem.value) {
-                elem.cls += ' clicked';
+            if (forwardColor === color) {
+                cls += ' clicked'
             }
 
             return <ColorButton
-                key = {index.toString()}
-                data = {elem}
+                key = { index.toString() }
+                value = { color }
+                handleClick = { this.handleClick }
+                cls = { cls }
             />
-        });
+        }
+
+        const listColorBtn = btnColors['colors'].map(textToColor);
 
         return (
-            <div className='rgb'>{listColorBtn}</div>
+            <div className="rgb">{ listColorBtn }</div>
         )
     }
 }
