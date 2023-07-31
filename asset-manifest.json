@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/itten/static/css/main.06b896d0.css",
+    "main.js": "/itten/static/js/main.00ef65ff.js",
+    "static/js/787.f8a285c4.chunk.js": "/itten/static/js/787.f8a285c4.chunk.js",
+    "index.html": "/itten/index.html",
+    "main.06b896d0.css.map": "/itten/static/css/main.06b896d0.css.map",
+    "main.00ef65ff.js.map": "/itten/static/js/main.00ef65ff.js.map",
+    "787.f8a285c4.chunk.js.map": "/itten/static/js/787.f8a285c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b896d0.css",
+    "static/js/main.00ef65ff.js"
+  ]
+}
